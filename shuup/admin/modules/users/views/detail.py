@@ -333,7 +333,7 @@ class UserDetailView(CreateOrUpdateView):
                     "first_name": getattr(self.object, "first_name") or getattr(self.object, "username", _("User")),
                     "shop_url": shop_url,
                     "admin_url": admin_url,
-                    "username": getattr(self.object, "username") or getattr(self.object.email)
+                    "username": getattr(self.object, "username") or getattr(self.object.email, "email")
                 },
                 from_email=django_settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[self.object.email]

@@ -30,7 +30,7 @@ otherwise it will return with exit code 1.
 
 import argparse
 
-from sanity_utils import find_files
+from .sanity_utils import find_files
 
 
 def main():

@@ -14,7 +14,7 @@ import argparse
 import os
 import sys
 
-import sanity_utils
+import .sanity_utils
 
 HEADER = """
 This file is part of Shuup.

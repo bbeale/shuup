@@ -11,7 +11,7 @@ from ast import BinOp, Mod, parse
 import click
 from six import text_type
 
-from sanity_utils import find_files, XNodeVisitor
+from .sanity_utils import find_files, XNodeVisitor
 
 encoding_comment_regexp = re.compile(r'^#.+coding[=:]\s*([-\w.]+).+$', re.MULTILINE | re.I)
 

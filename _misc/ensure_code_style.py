@@ -13,7 +13,7 @@ from itertools import chain
 
 import click
 
-from sanity_utils import (
+from .sanity_utils import (
     dotify_ast_name, find_files, get_assign_first_target, IGNORED_DIRS,
     XNodeVisitor
 )

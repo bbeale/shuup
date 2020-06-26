@@ -17,7 +17,7 @@ from collections import Counter
 import jinja2
 from django.utils.text import slugify
 
-from sanity_utils import find_files
+from .sanity_utils import find_files
 
 _paragraph_re = re.compile(r'(?:\r\n|\r|\n){2,}')
 
